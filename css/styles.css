@@ -1,0 +1,64 @@
+/* NIVA — custom CSS only where Tailwind can't reproduce the reference */
+
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+body { font-family: 'Lato', system-ui, sans-serif; color: #000; background: #fff; -webkit-font-smoothing: antialiased; }
+
+.font-serif-display { font-family: 'Newsreader', Georgia, serif; letter-spacing: -0.015em; font-optical-sizing: auto; }
+
+/* Eyebrow heading with purple underline (WHO WE SERVE / WHY NIVA) */
+.eyebrow { display: inline-block; font-weight: 700; font-size: 20px; letter-spacing: .04em; text-transform: uppercase; padding-bottom: 8px; border-bottom: 4px solid #6d28d9; line-height: 1.2; }
+
+/* Image blocks: neutral tone shows if a supplied asset is not present yet */
+.media { position: relative; overflow: hidden; background: #d8d4de; }
+.media > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2,.6,.2,1); }
+
+/* Who-we-serve cards */
+.serve-card { background: #fff; border-bottom: 2px solid #6d28d9; box-shadow: 0 1px 6px rgba(0,0,0,.12); display: block; }
+.serve-card:hover .media > img { transform: scale(1.03); }
+.serve-card .arrow { transition: transform .3s ease, background-color .3s ease, color .3s ease; }
+.serve-card:hover .arrow { transform: translateX(4px); }
+
+/* Nav underline hover */
+.nav-link { position: relative; }
+.nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; background: #6d28d9; transform: scaleX(0); transform-origin: left; transition: transform .25s ease; }
+.nav-link.is-active::after, .nav-link:hover::after, .nav-link:focus-visible::after { transform: scaleX(1); }
+
+/* Focus */
+a:focus-visible, button:focus-visible { outline: 2px solid #6d28d9; outline-offset: 3px; }
+.on-dark a:focus-visible, .on-dark button:focus-visible { outline-color: #fff; }
+
+/* Hero overlay for headline legibility */
+.hero-overlay { background: linear-gradient(90deg, rgba(0,0,0,.28) 0%, rgba(0,0,0,.08) 60%, rgba(0,0,0,0) 100%); }
+
+/* Why NIVA: stat divider */
+.stat { border-bottom: 1px solid #cfcfcf; padding-bottom: 26px; }
+
+/* Outline buttons */
+.btn-outline { display: inline-flex; align-items: center; justify-content: center; min-height: 80px; padding: 0 48px; border: 1px solid #000; background: #fff; font-weight: 700; font-size: 20px; transition: background-color .25s, color .25s; }
+.btn-outline:hover { background: #000; color: #fff; }
+
+/* Footer */
+.footer-link { font-weight: 700; font-size: 20px; line-height: 1.2; transition: opacity .2s; }
+.footer-link:hover { opacity: .65; }
+.legal a { font-size: 17px; }
+.legal li + li::before { content: ''; display: inline-block; width: 2px; height: 16px; background: #fff; margin: 0 18px 0 0; vertical-align: -2px; }
+.legal li { display: inline-flex; align-items: center; margin-right: 18px; }
+.legal li + li { margin-left: 0; }
+
+/* Scroll reveal (only when JS is running) */
+.js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .8s ease, transform .8s ease; }
+.js .reveal.in { opacity: 1; transform: none; }
+
+@media (max-width: 640px) {
+  .eyebrow { font-size: 17px; }
+  .btn-outline { min-height: 64px; padding: 0 28px; font-size: 18px; width: 100%; }
+  .footer-link { font-size: 18px; }
+  .legal li + li::before { display: none; }
+  .legal li { margin-right: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  .media > img, .serve-card .arrow { transition: none; }
+}
