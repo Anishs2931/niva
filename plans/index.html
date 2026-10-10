@@ -10,30 +10,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>tailwind.config={theme:{extend:{colors:{niva:'#6d28d9'},fontFamily:{serif:['Newsreader','Georgia','serif'],sans:['Lato','system-ui','sans-serif']}}}};</script>
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <a href="#treatments" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:px-4 focus:py-2">Skip to plans</a>
 
   <header class="sticky top-0 z-50 bg-white border-b border-[#e5e5e5]">
-    <div class="mx-auto flex h-[72px] lg:h-[99px] max-w-[1500px] items-center justify-between px-5 sm:px-8 xl:px-0">
+    <div class="mx-auto flex h-[72px] lg:h-[99px] max-w-[1500px] items-center justify-between px-5 sm:px-8 min-[1560px]:px-0">
       <div class="flex items-center gap-8 xl:gap-12">
-        <a href="index.html" aria-label="NIVA home" class="font-sans font-bold text-[26px] lg:text-[28px] tracking-[.5em] leading-none pr-0 xl:mr-4">NIVA</a>
+        <a href="../home/index.html" aria-label="NIVA home" class="font-sans font-bold text-[26px] lg:text-[28px] tracking-[.5em] leading-none pr-0 xl:mr-4">NIVA</a>
         <nav aria-label="Primary" class="hidden lg:block">
-          <ul class="flex items-center gap-10 text-[20px]">
-            <li><a class="nav-link" href="index.html#who">Individuals</a></li>
-            <li><a class="nav-link" href="index.html#who">Providers</a></li>
-            <li><a class="nav-link" href="index.html#who">Partners</a></li>
-            <li><a class="nav-link is-active" aria-current="page" href="plans.html">Plans</a></li>
-            <li><a class="nav-link" href="index.html#why">About NIVA</a></li>
+          <ul class="flex items-center gap-6 xl:gap-10 text-[18px] xl:text-[20px]">
+            <li><a class="nav-link" href="../home/index.html#who">Individuals</a></li>
+            <li><a class="nav-link" href="../home/index.html#who">Providers</a></li>
+            <li><a class="nav-link" href="../home/index.html#who">Partners</a></li>
+            <li><a class="nav-link is-active" aria-current="page" href="../plans/index.html">Plans</a></li>
+            <li><a class="nav-link" href="../policies/index.html">Policies</a></li>
+            <li><a class="nav-link" href="../home/index.html#why">About NIVA</a></li>
           </ul>
         </nav>
       </div>
       <div class="hidden lg:flex items-center gap-6 text-[18px] font-bold">
-        <a class="nav-link" href="index.html#why">About</a>
+        <a class="nav-link" href="../home/index.html#why">About</a>
         <a class="nav-link" href="#claims">Claims</a>
-        <a class="nav-link" href="#claims">Login</a>
+        <a class="nav-link" href="../login/index.html">Login</a>
         <button type="button" aria-label="Search" class="p-1">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="M15 15l6 6"/></svg>
         </button>
@@ -44,14 +45,15 @@
     </div>
     <div id="mobile-menu" class="hidden lg:hidden border-t border-[#e5e5e5] bg-white px-5 sm:px-8 pb-6">
       <ul class="flex flex-col text-[20px]">
-        <li><a class="block py-3 border-b border-[#eee]" href="index.html#who">Individuals</a></li>
-        <li><a class="block py-3 border-b border-[#eee]" href="index.html#who">Providers</a></li>
-        <li><a class="block py-3 border-b border-[#eee]" href="index.html#who">Partners</a></li>
-        <li><a class="block py-3 border-b border-[#eee] font-bold" aria-current="page" href="plans.html">Plans</a></li>
-        <li><a class="block py-3 border-b border-[#eee]" href="index.html#why">About NIVA</a></li>
-        <li><a class="block py-3 border-b border-[#eee] font-bold" href="index.html#why">About</a></li>
+        <li><a class="block py-3 border-b border-[#eee]" href="../home/index.html#who">Individuals</a></li>
+        <li><a class="block py-3 border-b border-[#eee]" href="../home/index.html#who">Providers</a></li>
+        <li><a class="block py-3 border-b border-[#eee]" href="../home/index.html#who">Partners</a></li>
+        <li><a class="block py-3 border-b border-[#eee] font-bold" aria-current="page" href="../plans/index.html">Plans</a></li>
+        <li><a class="block py-3 border-b border-[#eee]" href="../policies/index.html">Policies</a></li>
+        <li><a class="block py-3 border-b border-[#eee]" href="../home/index.html#why">About NIVA</a></li>
+        <li><a class="block py-3 border-b border-[#eee] font-bold" href="../home/index.html#why">About</a></li>
         <li><a class="block py-3 border-b border-[#eee] font-bold" href="#claims">Claims</a></li>
-        <li><a class="block py-3 font-bold" href="#claims">Login</a></li>
+        <li><a class="block py-3 font-bold" href="../login/index.html">Login</a></li>
       </ul>
     </div>
   </header>
@@ -63,7 +65,7 @@
       <div class="hero-text">
         <span class="eyebrow">Our Plans</span>
         <h1 class="hero-h1">Your journey, <em>protected.</em></h1>
-        <p class="hero-p">Explore every procedure NIVA covers &mdash; what it involves, how recovery works and exactly how your policy supports you.</p>
+        <p class="hero-p">NIVA doesn&rsquo;t provide treatment &mdash; we cover the financial risk. See what each cover includes, how claims work and what you get back.</p>
         <div class="hero-pill">
           <span class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg></span>
           <span>Trusted coverage for your aesthetic journey</span>
@@ -83,19 +85,20 @@
     <div class="abs glow" style="left:285px;top:455px;width:520px;height:380px"></div>
 
     <!-- illustration (hair is a separate animated layer) -->
+    <div class="abs hero-panel" style="left:255px;top:430px;width:590px;height:415px"></div>
     <div class="abs illus-wrap" style="left:0;top:0;width:1600px;height:894px;pointer-events:none">
-      <img class="abs" src="assets/illus.png" style="left:255px;top:430px" alt="">
-      <img class="abs hair" src="assets/hair_layer.png" style="left:425px;top:493px;filter:url(#hairwave)" alt="">
+      <img class="abs" src="../assets/illus.png" style="left:255px;top:430px" alt="">
+      <img class="abs hair" src="../assets/hair_layer.png" style="left:425px;top:493px;filter:url(#hairwave)" alt="">
       <!-- flask & tubes -->
-      <img class="abs flask" src="assets/p_flask.png" style="left:408px;top:710px" alt="">
+      <img class="abs flask" src="../assets/p_flask.png" style="left:408px;top:710px" alt="">
       <!-- left assistant + syringe -->
       <div class="abs grpL" style="left:360px;top:652px;width:65px;height:134px">
-        <img class="abs" src="assets/p_personL.png" style="left:8px;top:23px" alt="">
-        <img class="abs syr" src="assets/p_syringe.png" style="left:0;top:0" alt="">
+        <img class="abs" src="../assets/p_personL.png" style="left:8px;top:23px" alt="">
+        <img class="abs syr" src="../assets/p_syringe.png" style="left:0;top:0" alt="">
       </div>
       <!-- right assistant + pointer -->
       <div class="abs grpR" style="left:555px;top:686px;width:88px;height:147px">
-        <img class="abs" src="assets/p_personR.png" style="left:0;top:0" alt="">
+        <img class="abs" src="../assets/p_personR.png" style="left:0;top:0" alt="">
       </div>
       <!-- bubbles rising in the flask -->
       <span class="abs bub" style="left:434px;top:742px;width:5px;height:5px;animation-delay:0s"></span>
@@ -106,22 +109,22 @@
     <!-- twinkling sparkles around the scene -->
     <svg class="abs" style="left:0;top:0;pointer-events:none" width="1600" height="894" viewBox="0 0 1600 894">
       <g fill="#fff" stroke="#c4b0f0" stroke-width=".8">
-        <path class="spark" style="animation-delay:0s" d="M330 560l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
-        <path class="spark" style="animation-delay:1.1s" d="M760 600l2.500 7 7 2.500-7 2.500-2.500 7-2.500-7-7-2.500 7-2.500z"/>
-        <path class="spark" style="animation-delay:2.2s" d="M690 470l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/>
-        <path class="spark" style="animation-delay:.6s" d="M300 780l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/>
-        <path class="spark" style="animation-delay:1.7s" d="M800 760l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/>
+        
+        
+        
+        
+        
       </g>
     </svg>
 
-    <img class="abs fl f1" src="assets/hair.png"   style="left:186px;top:396px" alt="">
-    <img class="abs fl f2" src="assets/laser.png"  style="left:790px;top:399px" alt="">
-    <img class="abs fl f3" src="assets/facial.png" style="left:97px;top:592px" alt="">
-    <img class="abs fl f4" src="assets/rhino.png"  style="left:843px;top:592px" alt="">
-    <div class="abs lbl fl f1" style="left:148px;width:200px;top:519px">Hair<br>Transplant</div>
-    <div class="abs lbl fl f2" style="left:753px;width:200px;top:521px">Laser<br>Treatments</div>
-    <div class="abs lbl fl f3" style="left:65px;width:200px;top:724px">Facial<br>Surgeries</div>
-    <div class="abs lbl fl f4" style="left:810px;width:200px;top:725px">Rhinoplasty</div>
+    <span class="abs fl f1 tile" style="left:110px;top:404px" role="presentation"><img src="../assets/hair.png" alt=""></span>
+    <span class="abs fl f2 tile" style="left:872px;top:404px" role="presentation"><img src="../assets/laser.png" alt=""></span>
+    <span class="abs fl f3 tile" style="left:24px;top:586px" role="presentation"><img src="../assets/facial.png" alt=""></span>
+    <span class="abs fl f4 tile" style="left:954px;top:586px" role="presentation"><img src="../assets/rhino.png" alt=""></span>
+    <div class="abs lbl fl f1" style="left:62px;width:200px;top:520px">Hair<br>Restoration</div>
+    <div class="abs lbl fl f2" style="left:824px;width:200px;top:520px">Skin &amp;<br>Laser</div>
+    <div class="abs lbl fl f3" style="left:-24px;width:200px;top:702px">Facial<br>Surgery</div>
+    <div class="abs lbl fl f4" style="left:906px;width:200px;top:702px">Rhinoplasty</div>
 
     <!-- hair wiggle filter -->
     <svg width="0" height="0" style="position:absolute">
@@ -139,14 +142,14 @@
   </section>
 
 <main class="treatments" id="treatments">
- <header class="tr-head reveal up"><span class="eyebrow">POLICIES &amp; TREATMENTS</span><h2>Every procedure, clearly covered.</h2><p>Explore what each treatment involves and exactly how your NIVA policy supports it — before you book.</p></header>
+ <header class="tr-head reveal up"><span class="eyebrow">POLICIES &amp; COVER</span><h2>Every procedure, clearly covered.</h2><p>NIVA doesn’t provide treatment — we cover the financial risk. See what each cover includes and exactly what you get back, before you book.</p></header>
 <section class="tr info-left" id="hair"><article class="info reveal left">
-  <span class="eyebrow"><b>01</b> HAIR RESTORATION</span>
-  <h3>Hair Transplant</h3>
-  <p class="lead">FUE and DHI follicular-unit transplants restore natural density by relocating healthy follicles from donor zones to thinning areas, one graft at a time.</p>
-  <div class="stats"><div><small>Duration</small><strong>6–8 hrs</strong></div><div><small>Recovery</small><strong>7–10 days</strong></div><div><small>Full results</small><strong>9–12 months</strong></div></div>
-  <h4>What's involved</h4>
-  <ol class="steps"><li><span>1</span>Consultation & scalp analysis</li><li><span>2</span>Donor follicle extraction</li><li><span>3</span>Recipient-site placement</li><li><span>4</span>Post-op care & follow-ups</li></ol>
+  <span class="eyebrow"><b>01</b> HAIR COVER</span>
+  <h3>Hair Restoration</h3>
+  <p class="lead">NIVA covers eligible hair restoration treatments, so the cost of a transplant or related care doesn’t fall on you alone. Once your claim is approved, your policy reimburses the eligible share.</p>
+  <div class="stats"><div><small>Reimbursement</small><strong>70%</strong></div><div><small>Annual limit</small><strong>$6,000</strong></div><div><small>Claim decision</small><strong>~5 days</strong></div></div>
+  <h4>How a claim works</h4>
+  <ol class="steps"><li><span>1</span>Check your eligibility</li><li><span>2</span>Get pre-authorisation</li><li><span>3</span>Treat with your chosen provider</li><li><span>4</span>Submit your claim &amp; get reimbursed</li></ol>
   <div class="policy"><div class="ph"><svg width="22" height="24" viewBox="0 0 24 26" fill="none" stroke="#6d28d9" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2 4 5v7c0 5 3.4 8 8 10 4.6-2 8-5 8-10V5z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><strong>Your policy coverage</strong></div>
    <dl><div><dt>Coverage</dt><dd>70% up to $6,000</dd></div><div><dt>Waiting period</dt><dd>12 months</dd></div><div><dt>Pre-authorization</dt><dd>Required</dd></div><div><dt>Co-pay</dt><dd>20%</dd></div></dl>
    <p class="excl"><b>Not covered:</b> Non-medical touch-ups and repeat procedures within 24 months.</p>
@@ -159,10 +162,10 @@
 <filter id="shd" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#6d4bb0" flood-opacity=".25"/></filter>
 </defs><defs><linearGradient id="Ac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9e0fb"/><stop offset="1" stop-color="#f5f0fe"/></linearGradient>
 <linearGradient id="Al" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dccbf7"/><stop offset="1" stop-color="#c0a8ef"/></linearGradient></defs>
-<circle cx="300" cy="212" r="196" fill="url(#Ac)"/><circle cx="470" cy="120" r="70" fill="#fff" opacity=".45"/>
-<path d="M0 360C120 330 210 350 320 372C430 392 520 372 590 350V415H0Z" fill="#e3d8fa" opacity=".7"/>
-<g class="leafsw" style="animation-delay:0s;transform-origin:36px 400px"><path transform="translate(36 250) rotate(-12 0 150)" d="M0 150C-60 90.0 -24.0 15.0 0 0C24.0 15.0 60 90.0 0 150Z" fill="url(#Al)"/><path transform="translate(36 250) rotate(-12 0 150)" d="M0 150V6" stroke="#fff" stroke-opacity=".55" stroke-width="2"/></g><g class="leafsw" style="animation-delay:-1s;transform-origin:70px 410px"><path transform="translate(70 300) rotate(10 0 110)" d="M0 110C-44 66.0 -17.6 11.0 0 0C17.6 11.0 44 66.0 0 110Z" fill="url(#Al)"/><path transform="translate(70 300) rotate(10 0 110)" d="M0 110V6" stroke="#fff" stroke-opacity=".55" stroke-width="2"/></g><g class="leafsw" style="animation-delay:-0.6s;transform-origin:556px 400px"><path transform="translate(556 260) rotate(14 0 140)" d="M0 140C-56 84.0 -22.400000000000002 14.0 0 0C22.400000000000002 14.0 56 84.0 0 140Z" fill="url(#Al)"/><path transform="translate(556 260) rotate(14 0 140)" d="M0 140V6" stroke="#fff" stroke-opacity=".55" stroke-width="2"/></g>
-<path class="spark" style="animation-delay:0s" transform="translate(250 40) scale(1.1)" d="M0 -9L2.6 -2.6L9 0L2.6 2.6L0 9L-2.6 2.6L-9 0L-2.6 -2.6Z" fill="#fff" stroke="#c4b0f0" stroke-width=".8"/><path class="spark" style="animation-delay:1s" transform="translate(560 80) scale(0.9)" d="M0 -9L2.6 -2.6L9 0L2.6 2.6L0 9L-2.6 2.6L-9 0L-2.6 -2.6Z" fill="#fff" stroke="#c4b0f0" stroke-width=".8"/><path class="spark" style="animation-delay:2s" transform="translate(30 170) scale(0.9)" d="M0 -9L2.6 -2.6L9 0L2.6 2.6L0 9L-2.6 2.6L-9 0L-2.6 -2.6Z" fill="#fff" stroke="#c4b0f0" stroke-width=".8"/><g filter="url(#shd)"><circle cx="404" cy="172" r="116" fill="#fff"/></g>
+
+<rect x="0" y="372" width="590" height="43" fill="#d4d4d4"/>
+
+<g filter="url(#shd)"><circle cx="404" cy="172" r="116" fill="#fff"/></g>
 <clipPath id="Alc"><circle cx="404" cy="172" r="108"/></clipPath>
 <g clip-path="url(#Alc)">
  <rect x="280" y="50" width="250" height="100" fill="#f3eefd"/>
@@ -178,9 +181,9 @@
 </g>
 <circle cx="404" cy="172" r="112" fill="none" stroke="url(#navyG)" stroke-width="10"/>
 <path d="M468 262L520 330" stroke="url(#navyG)" stroke-width="22" stroke-linecap="round"/><path d="M470 266L516 322" stroke="#8fa5ee" stroke-width="5" stroke-linecap="round" opacity=".6"/>
-<g transform="translate(372 366)"><ellipse rx="34" ry="9" cy="6" fill="#e3d8fa"/><ellipse rx="34" ry="10" fill="#fff" stroke="#c8d6ee" stroke-width="2"/><g fill="#1d1b78"><rect x="-16" y="-5" width="2.4" height="9" rx="1"/><rect x="-6" y="-6" width="2.4" height="10" rx="1"/><rect x="4" y="-5" width="2.4" height="9" rx="1"/><rect x="14" y="-6" width="2.4" height="10" rx="1"/></g></g></svg>
+</svg>
 <div class="abs wm " style="left:58px;top:70px;width:172px;height:340px;transform-origin:0 0;transform:scale(0.8)"><span class="abs" style="left:-30px;top:0;width:252px;height:340px" data-niva-character="hair" data-before-after data-label="A man whose hair grows back from before to after"></span>
-</div><div class="ba-tag" aria-hidden="true" style="left:64px;top:100px"><span class="b">Before</span><span class="a">After</span></div><img class="abs grpR" src="assets/p_personR.png" style="left:488px;top:216px;width:110px;height:auto;transform-origin:55px 170px" alt=""><img class="abs flask" src="assets/p_flask.png" style="left:240px;top:324px;width:92px;height:auto" alt=""><span class="abs bub" style="left:272px;top:342px;width:5px;height:5px"></span><span class="abs bub" style="left:280px;top:350px;width:4px;height:4px;animation-delay:.9s"></span><div class="chip" style="left:-4px;top:18px;width:190px;animation-delay:0s"><svg width="34" height="34" viewBox="0 0 34 34"><circle cx="17" cy="17" r="13" fill="none" stroke="#ece5fb" stroke-width="5"/><circle class="ringp" cx="17" cy="17" r="13" fill="none" stroke="#6d28d9" stroke-width="5" stroke-linecap="round" pathLength="100" transform="rotate(-90 17 17)"/></svg><div><b>Graft density</b><span>Restoring · 82%</span></div></div><div class="chip" style="left:-4px;top:348px;width:176px;animation-delay:-1.6s"><span class="dot"></span><div><b>Natural growth</b><span>Follicle by follicle</span></div></div></div></div><span class="badge">Hair Transplant</span></div></section>
+</div><div class="ba-tag" aria-hidden="true" style="left:64px;top:100px"><span class="b">Before</span><span class="a">After</span></div></div></div><span class="badge">Hair Restoration Cover</span></div></section>
 <section class="tr info-right" id="laser"><div class="art reveal left"><div class="hs"><div class="hs-in">
 <svg class="abs" style="left:0;top:0;overflow:visible" width="590" height="415" viewBox="0 0 590 415"><defs>
 <linearGradient id="skinG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8b4a4"/><stop offset="1" stop-color="#ef8d83"/></linearGradient>
@@ -189,12 +192,12 @@
 <filter id="shd" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#6d4bb0" flood-opacity=".25"/></filter>
 </defs><defs><linearGradient id="Bc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fde4cf"/><stop offset="1" stop-color="#fff2e4"/></linearGradient>
 <linearGradient id="Bl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbd3c0"/><stop offset="1" stop-color="#f7b9a6"/></linearGradient></defs>
-<circle cx="300" cy="210" r="196" fill="url(#Bc)"/>
+
 <g class="rays" opacity=".5"><path d="M300 210L560 60L580 120Z" fill="#fff"/><path d="M300 210L580 200L580 250Z" fill="#fff"/><path d="M300 210L520 340L470 380Z" fill="#fff"/></g>
-<circle cx="110" cy="70" r="46" fill="#fff" opacity=".5"/>
-<path d="M0 372C130 350 240 372 340 380C450 390 520 370 590 358V415H0Z" fill="#f9d8c2" opacity=".85"/>
-<g class="leafsw" style="animation-delay:0s;transform-origin:560px 390px"><path transform="translate(560 250) rotate(12 0 140)" d="M0 140C-58 84.0 -23.200000000000003 14.0 0 0C23.200000000000003 14.0 58 84.0 0 140Z" fill="url(#Bl)"/><path transform="translate(560 250) rotate(12 0 140)" d="M0 140V6" stroke="#fff" stroke-opacity=".55" stroke-width="2"/></g><g class="leafsw" style="animation-delay:-1s;transform-origin:528px 400px"><path transform="translate(528 300) rotate(-8 0 100)" d="M0 100C-40 60.0 -16.0 10.0 0 0C16.0 10.0 40 60.0 0 100Z" fill="url(#Bl)"/><path transform="translate(528 300) rotate(-8 0 100)" d="M0 100V6" stroke="#fff" stroke-opacity=".55" stroke-width="2"/></g><g class="leafsw" style="animation-delay:-0.5s;transform-origin:18px 420px"><path transform="translate(18 300) rotate(-10 0 120)" d="M0 120C-50 72.0 -20.0 12.0 0 0C20.0 12.0 50 72.0 0 120Z" fill="url(#Bl)"/><path transform="translate(18 300) rotate(-10 0 120)" d="M0 120V6" stroke="#fff" stroke-opacity=".55" stroke-width="2"/></g>
-<path class="spark" style="animation-delay:0s" transform="translate(300 36) scale(1.2)" d="M0 -9L2.6 -2.6L9 0L2.6 2.6L0 9L-2.6 2.6L-9 0L-2.6 -2.6Z" fill="#fff" stroke="#c4b0f0" stroke-width=".8"/><path class="spark" style="animation-delay:1s" transform="translate(560 60) scale(0.9)" d="M0 -9L2.6 -2.6L9 0L2.6 2.6L0 9L-2.6 2.6L-9 0L-2.6 -2.6Z" fill="#fff" stroke="#c4b0f0" stroke-width=".8"/><path class="spark" style="animation-delay:2s" transform="translate(180 40) scale(0.8)" d="M0 -9L2.6 -2.6L9 0L2.6 2.6L0 9L-2.6 2.6L-9 0L-2.6 -2.6Z" fill="#fff" stroke="#c4b0f0" stroke-width=".8"/><g filter="url(#shd)"><rect x="34" y="150" width="118" height="206" rx="24" fill="url(#navyG)"/></g>
+
+<rect x="0" y="372" width="590" height="43" fill="#d4d4d4"/>
+
+<g filter="url(#shd)"><rect x="34" y="150" width="118" height="206" rx="24" fill="url(#navyG)"/></g>
 <rect x="48" y="166" width="90" height="62" rx="12" fill="#0e1b49"/>
 <polyline class="wave" points="54,198 66,198 74,176 84,220 94,184 104,206 112,198 134,198" fill="none" stroke="#7fe3ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" pathLength="1"/>
 <circle cx="64" cy="252" r="9" fill="#8fa5ee"/><circle cx="92" cy="252" r="9" fill="#ff8aa0"/><circle cx="120" cy="252" r="9" fill="#8fa5ee"/>
@@ -204,58 +207,55 @@
 <g class="armG"><path d="M150 166L210 112L252 142" fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/><path d="M150 166L210 112L252 142" fill="none" stroke="#c8d6ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="210" cy="112" r="9" fill="#4d54c8"/>
 <g transform="translate(252 142) rotate(34)"><rect x="-8" y="-13" width="92" height="26" rx="12" fill="url(#steelG)" stroke="#c8d6ee" stroke-width="2"/><rect x="26" y="-13" width="12" height="26" fill="#4d54c8"/><path d="M84 -8L98 -4L98 4L84 8Z" fill="#b9c6e0"/><circle cx="62" cy="0" r="5" fill="#ff8aa0"/></g></g></svg>
 <div class="abs wm " style="left:338px;top:66px;width:172px;height:340px;transform-origin:0 0;transform:scale(0.82)">
-<img class="abs" src="assets/woman.png" style="left:2px;top:24px" alt=""><svg class="abs" style="left:0;top:0" width="172" height="340" viewBox="0 0 172 340">
+<img class="abs" src="../assets/woman.png" style="left:2px;top:24px" alt=""><svg class="abs" style="left:0;top:0" width="172" height="340" viewBox="0 0 172 340">
 <path d="M-2 322C22 306 48 296 62 290L88 322L112 290C128 296 152 306 174 322V342H-2Z" fill="#ffffff"/>
 <path d="M62 290L88 322L112 290" fill="none" stroke="#b9a2ee" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/></svg><svg class="abs" style="left:0;top:0;overflow:visible" width="172" height="340" viewBox="0 0 172 340"><circle class="spot" style="animation-delay:0.0s" cx="70" cy="215" r="2.6" fill="#b36a5c"/><circle class="spot" style="animation-delay:0.45s" cx="78" cy="232" r="2.2" fill="#b36a5c"/><circle class="spot" style="animation-delay:0.9s" cx="58" cy="236" r="2.8" fill="#b36a5c"/><circle class="spot" style="animation-delay:1.35s" cx="150" cy="236" r="2.4" fill="#b36a5c"/><circle class="spot" style="animation-delay:1.8s" cx="160" cy="222" r="2" fill="#b36a5c"/><g><path d="M30 189H46M146 189H162" stroke="#4d54c8" stroke-width="6" fill="none" stroke-linecap="round"/><rect x="44" y="172" width="102" height="30" rx="15" fill="#b49ae8" fill-opacity=".38" stroke="#4d54c8" stroke-width="3.4"/><path d="M92 186H98" stroke="#4d54c8" stroke-width="4"/><path d="M58 180C66 176 78 176 86 180" stroke="#fff" stroke-width="3" opacity=".7" stroke-linecap="round" fill="none"/></g></svg>
-<img class="abs hair" src="assets/hair_layer.png" style="left:0;top:0;filter:url(#hairwave)" alt=""></div><svg class="abs" style="left:0;top:0;overflow:visible" width="590" height="415" viewBox="0 0 590 415">
+<img class="abs hair" src="../assets/hair_layer.png" style="left:0;top:0;filter:url(#hairwave)" alt=""></div><svg class="abs" style="left:0;top:0;overflow:visible" width="590" height="415" viewBox="0 0 590 415">
 <defs><radialGradient id="Bg"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#ffb3c0" stop-opacity=".85"/><stop offset="1" stop-color="#ff8aa0" stop-opacity="0"/></radialGradient>
 <linearGradient id="Bb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8aa0" stop-opacity="0"/><stop offset="1" stop-color="#ff6f8a" stop-opacity=".95"/></linearGradient></defs>
 <path class="beam" d="M326 228L376 236L376 244L330 244Z" fill="url(#Bb)"/>
 <circle class="glowc" cx="386" cy="240" r="24" fill="url(#Bg)"/>
-<circle class="ripple" cx="386" cy="240" r="9" fill="none" stroke="#ff7b93" stroke-width="3"/><circle class="ripple" style="animation-delay:.6s" cx="386" cy="240" r="9" fill="none" stroke="#ff7b93" stroke-width="3"/></svg><img class="abs grpL" src="assets/p_personL.png" style="left:196px;top:228px;width:86px;height:auto;transform-origin:42px 160px" alt=""><div class="chip" style="left:-4px;top:16px;width:190px;animation-delay:0s"><span class="dot"></span><div><b>Pulse energy</b><span>12 J/cm² · precise</span></div></div><div class="chip" style="left:400px;top:338px;width:182px;animation-delay:-1.4s"><svg width="34" height="34" viewBox="0 0 34 34"><circle cx="17" cy="17" r="13" fill="none" stroke="#ece5fb" stroke-width="5"/><circle class="ringp" cx="17" cy="17" r="13" fill="none" stroke="#6d28d9" stroke-width="5" stroke-linecap="round" pathLength="100" transform="rotate(-90 17 17)"/></svg><div><b>Skin renewal</b><span>Spots fading</span></div></div></div></div><span class="badge">Laser Treatments</span></div><article class="info reveal right">
-  <span class="eyebrow"><b>02</b> SKIN & LASER</span>
-  <h3>Laser Treatments</h3>
-  <p class="lead">Fractional and diode laser sessions target pigmentation, scarring, unwanted hair and skin texture with precisely controlled energy pulses.</p>
-  <div class="stats"><div><small>Per session</small><strong>20–45 min</strong></div><div><small>Recovery</small><strong>1–3 days</strong></div><div><small>Typical course</small><strong>4–6 sessions</strong></div></div>
-  <h4>What's involved</h4>
-  <ol class="steps"><li><span>1</span>Skin assessment & patch test</li><li><span>2</span>Targeted laser pulses</li><li><span>3</span>Cooling & soothing care</li><li><span>4</span>Scheduled follow-up sessions</li></ol>
+<circle class="ripple" cx="386" cy="240" r="9" fill="none" stroke="#ff7b93" stroke-width="3"/><circle class="ripple" style="animation-delay:.6s" cx="386" cy="240" r="9" fill="none" stroke="#ff7b93" stroke-width="3"/></svg></div></div><span class="badge">Skin &amp; Laser Cover</span></div><article class="info reveal right">
+  <span class="eyebrow"><b>02</b> SKIN &amp; LASER COVER</span>
+  <h3>Laser &amp; Skin Treatments</h3>
+  <p class="lead">NIVA covers eligible laser and skin treatments with a documented medical need, such as scarring or pigmentation. Each approved session is reimbursed up to your annual limit.</p>
+  <div class="stats"><div><small>Reimbursement</small><strong>60%</strong></div><div><small>Annual limit</small><strong>$3,500</strong></div><div><small>Claim decision</small><strong>~5 days</strong></div></div>
+  <h4>How a claim works</h4>
+  <ol class="steps"><li><span>1</span>Check your session limits</li><li><span>2</span>Get pre-authorisation</li><li><span>3</span>Attend sessions with your provider</li><li><span>4</span>Submit each claim &amp; get reimbursed</li></ol>
   <div class="policy"><div class="ph"><svg width="22" height="24" viewBox="0 0 24 26" fill="none" stroke="#6d28d9" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2 4 5v7c0 5 3.4 8 8 10 4.6-2 8-5 8-10V5z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><strong>Your policy coverage</strong></div>
    <dl><div><dt>Coverage</dt><dd>60% up to $3,500 / yr</dd></div><div><dt>Waiting period</dt><dd>6 months</dd></div><div><dt>Pre-authorization</dt><dd>Required beyond 3 sessions</dd></div><div><dt>Co-pay</dt><dd>15%</dd></div></dl>
    <p class="excl"><b>Not covered:</b> Purely aesthetic skin-tone treatments without a documented medical indication.</p>
    <div class="cta"><a href="#" class="btn2">Check my eligibility <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a href="#" class="lnk">View policy details →</a></div>
   </div></article></section>
 <section class="tr info-left" id="facial"><article class="info reveal left">
-  <span class="eyebrow"><b>03</b> FACIAL SURGERY</span>
-  <h3>Facial Surgeries</h3>
-  <p class="lead">Facelifts, brow and eyelid lifts and contouring procedures that rebalance facial structure while preserving natural expression.</p>
-  <div class="stats"><div><small>Duration</small><strong>2–5 hrs</strong></div><div><small>Recovery</small><strong>2–3 weeks</strong></div><div><small>Full results</small><strong>3–6 months</strong></div></div>
-  <h4>What's involved</h4>
-  <ol class="steps"><li><span>1</span>3D facial mapping</li><li><span>2</span>Surgical planning</li><li><span>3</span>Procedure under anesthesia</li><li><span>4</span>Recovery monitoring</li></ol>
+  <span class="eyebrow"><b>03</b> FACIAL SURGERY COVER</span>
+  <h3>Facial Surgery</h3>
+  <p class="lead">NIVA covers eligible facial surgery when it is medically or reconstructively supported, so you can plan the cost with confidence. We reimburse the approved share — we never perform or recommend procedures.</p>
+  <div class="stats"><div><small>Reimbursement</small><strong>50%</strong></div><div><small>Annual limit</small><strong>$9,000</strong></div><div><small>Claim decision</small><strong>~7 days</strong></div></div>
+  <h4>How a claim works</h4>
+  <ol class="steps"><li><span>1</span>Check your eligibility</li><li><span>2</span>Get pre-authorisation</li><li><span>3</span>Choose your surgeon &amp; provider</li><li><span>4</span>Submit your claim &amp; get reimbursed</li></ol>
   <div class="policy"><div class="ph"><svg width="22" height="24" viewBox="0 0 24 26" fill="none" stroke="#6d28d9" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2 4 5v7c0 5 3.4 8 8 10 4.6-2 8-5 8-10V5z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><strong>Your policy coverage</strong></div>
    <dl><div><dt>Coverage</dt><dd>50% up to $9,000</dd></div><div><dt>Waiting period</dt><dd>18 months</dd></div><div><dt>Pre-authorization</dt><dd>Required</dd></div><div><dt>Co-pay</dt><dd>25%</dd></div></dl>
    <p class="excl"><b>Not covered:</b> Elective enhancements unrelated to reconstructive or medical need.</p>
    <div class="cta"><a href="#" class="btn2">Check my eligibility <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a href="#" class="lnk">View policy details →</a></div>
   </div></article><div class="art reveal right"><div class="hs"><div class="hs-in">
-<svg class="abs" style="left:0;top:0;overflow:visible" width="590" height="415" viewBox="0 0 590 415"><defs>
-<linearGradient id="skinG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8b4a4"/><stop offset="1" stop-color="#ef8d83"/></linearGradient>
-<linearGradient id="navyG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b3da8"/><stop offset="1" stop-color="#1e2080"/></linearGradient>
-<linearGradient id="steelG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d7e1f4"/></linearGradient>
-<filter id="shd" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#6d4bb0" flood-opacity=".25"/></filter>
-</defs><defs><linearGradient id="Cc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e4dffa"/><stop offset="1" stop-color="#f4f1fe"/></linearGradient>
-<linearGradient id="Cl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8d0f6"/><stop offset="1" stop-color="#bfb4ee"/></linearGradient></defs>
-<rect x="150" y="30" width="290" height="360" rx="145" fill="url(#Cc)"/>
-<circle cx="470" cy="330" r="86" fill="#fff" opacity=".45"/>
-<path d="M0 372C130 356 240 376 340 382C450 390 520 372 590 360V415H0Z" fill="#d9d1f7" opacity=".85"/>
-<g class="leafsw" style="animation-delay:0s;transform-origin:30px 390px"><path transform="translate(30 240) rotate(-10 0 150)" d="M0 150C-56 90.0 -22.400000000000002 15.0 0 0C22.400000000000002 15.0 56 90.0 0 150Z" fill="url(#Cl)"/><path transform="translate(30 240) rotate(-10 0 150)" d="M0 150V6" stroke="#fff" stroke-opacity=".55" stroke-width="2"/></g><g class="leafsw" style="animation-delay:-1s;transform-origin:66px 400px"><path transform="translate(66 300) rotate(12 0 100)" d="M0 100C-40 60.0 -16.0 10.0 0 0C16.0 10.0 40 60.0 0 100Z" fill="url(#Cl)"/><path transform="translate(66 300) rotate(12 0 100)" d="M0 100V6" stroke="#fff" stroke-opacity=".55" stroke-width="2"/></g><g class="leafsw" style="animation-delay:-0.7s;transform-origin:560px 390px"><path transform="translate(560 250) rotate(12 0 140)" d="M0 140C-54 84.0 -21.6 14.0 0 0C21.6 14.0 54 84.0 0 140Z" fill="url(#Cl)"/><path transform="translate(560 250) rotate(12 0 140)" d="M0 140V6" stroke="#fff" stroke-opacity=".55" stroke-width="2"/></g>
-<path class="spark" style="animation-delay:0s" transform="translate(300 30) scale(1.2)" d="M0 -9L2.6 -2.6L9 0L2.6 2.6L0 9L-2.6 2.6L-9 0L-2.6 -2.6Z" fill="#fff" stroke="#c4b0f0" stroke-width=".8"/><path class="spark" style="animation-delay:1s" transform="translate(40 150) scale(0.9)" d="M0 -9L2.6 -2.6L9 0L2.6 2.6L0 9L-2.6 2.6L-9 0L-2.6 -2.6Z" fill="#fff" stroke="#c4b0f0" stroke-width=".8"/><path class="spark" style="animation-delay:2s" transform="translate(556 150) scale(0.9)" d="M0 -9L2.6 -2.6L9 0L2.6 2.6L0 9L-2.6 2.6L-9 0L-2.6 -2.6Z" fill="#fff" stroke="#c4b0f0" stroke-width=".8"/></svg>
-<svg class="abs" style="left:0;top:0;overflow:visible" width="590" height="415" viewBox="0 0 590 415"><g fill="none" stroke="#8c7fe0" stroke-width="1.8" stroke-dasharray="3 6"><ellipse class="orb" cx="291" cy="150" rx="132" ry="34" transform="rotate(-18 291 150)"/><ellipse class="orb" style="animation-direction:reverse" cx="291" cy="150" rx="132" ry="34" transform="rotate(18 291 150)"/></g>
-<circle r="6" fill="#fff" stroke="#6d28d9" stroke-width="3"><animateMotion dur="5s" repeatCount="indefinite" path="M159 150a132 34 0 1 0 264 0a132 34 0 1 0 -264 0" rotate="auto"/></circle></svg><div class="abs wm " style="left:205px;top:46px;width:172px;height:340px;transform-origin:0 0;transform:scale(0.98)"><span class="abs" style="left:-30px;top:0;width:252px;height:340px" data-niva-character="surgery"></span>
-</div><svg class="abs" style="left:0;top:0;overflow:visible" width="590" height="415" viewBox="0 0 590 415"><g fill="none" stroke="#6d28d9" stroke-linecap="round" stroke-width="3.2"><path class="draw" pathLength="1" d="M226 262C230 300 248 326 274 332C300 326 318 300 322 262" stroke-dasharray="1"/><path class="draw" style="animation-delay:.5s" pathLength="1" d="M238 188C256 176 276 176 292 188" stroke-dasharray="1"/></g>
-<g fill="#fff" stroke="#6d28d9" stroke-width="2.4"><circle class="pulse" cx="233" cy="268" r="5"/><circle class="pulse" style="animation-delay:.4s" cx="318" cy="268" r="5"/><circle class="pulse" style="animation-delay:.8s" cx="274" cy="332" r="5"/><circle class="pulse" style="animation-delay:1.2s" cx="262" cy="188" r="5"/></g>
-<g class="lift"><path d="M232 292V270M232 270l-7 9M232 270l7 9" stroke="#6d28d9" stroke-width="3" fill="none" stroke-linecap="round"/></g><g class="lift" style="animation-delay:-.8s"><path d="M320 292V270M320 270l-7 9M320 270l7 9" stroke="#6d28d9" stroke-width="3" fill="none" stroke-linecap="round"/></g><g transform="translate(446 96) rotate(7)" filter="url(#shd)"><rect width="124" height="168" rx="16" fill="url(#navyG)"/><rect x="8" y="10" width="108" height="148" rx="10" fill="#f4f1fe"/>
-<clipPath id="Ctc"><rect x="8" y="10" width="108" height="148" rx="10"/></clipPath><g clip-path="url(#Ctc)"><ellipse cx="62" cy="86" rx="30" ry="40" fill="#f8b4a4"/><path d="M30 80C30 40 94 40 94 80C80 66 46 66 30 80Z" fill="#1e2080"/>
-<g class="slide"><rect x="8" y="10" width="54" height="148" fill="#e4dffa" opacity=".88"/><path d="M34 100C44 118 80 118 90 100" stroke="#6d28d9" stroke-width="2" fill="none" stroke-dasharray="3 3"/><rect x="60" y="10" width="3" height="148" fill="#fff"/><circle cx="62" cy="84" r="9" fill="#fff" stroke="#6d28d9" stroke-width="2.4"/></g></g>
-<text x="14" y="154" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#6d28d9">BEFORE  ·  AFTER</text></g><path d="M214 252L252 276" stroke="#6d28d9" stroke-width="2" stroke-dasharray="4 4" fill="none" class="mesh"/></svg><img class="abs grpR" src="assets/p_personR.png" style="left:88px;top:222px;width:116px;height:auto;transform-origin:58px 170px;transform:scaleX(-1)" alt=""><div class="chip" style="left:-4px;top:14px;width:190px;animation-delay:0s"><svg width="34" height="34" viewBox="0 0 34 34"><circle cx="17" cy="17" r="13" fill="none" stroke="#ece5fb" stroke-width="5"/><circle class="ringp" cx="17" cy="17" r="13" fill="none" stroke="#6d28d9" stroke-width="5" stroke-linecap="round" pathLength="100" transform="rotate(-90 17 17)"/></svg><div><b>Symmetry</b><span>Balanced · 98%</span></div></div><div class="chip" style="left:392px;top:330px;width:186px;animation-delay:-1.5s"><span class="dot"></span><div><b>Contour mapped</b><span>Jawline & cheek</span></div></div></div></div><span class="badge">Facial Surgeries</span></div></section>
+<svg class="abs" style="left:0;top:0" width="590" height="415" viewBox="0 0 590 415" aria-hidden="true"><rect x="0" y="372" width="590" height="43" fill="#d4d4d4"/></svg>
+<div class="abs wm" style="left:200px;top:46px;width:172px;height:340px;transform-origin:0 0"><span class="abs" style="left:-30px;top:0;width:252px;height:340px" data-niva-character="surgery" data-before-after data-label="A woman whose jawline and face are refined by a cosmetic procedure"></span></div>
+<svg class="abs keep" style="left:0;top:0;overflow:visible;pointer-events:none" width="590" height="415" viewBox="0 0 590 415" aria-hidden="true">
+  <g transform="translate(295 46)" fill="none" stroke="#6d28d9" stroke-linecap="round">
+    <path stroke-width="1.8" stroke-dasharray="4 4" d="M-44 196 C-46 230 -42 252 -28 262 C-20 270 -8 274 0 274 C8 274 20 270 28 262 C42 252 46 230 44 196">
+      <animate attributeName="d" dur="7s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.3;.55;.9;1" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1;.4 0 .2 1" values="M-44 196 C-46 230 -42 252 -28 262 C-20 270 -8 274 0 274 C8 274 20 270 28 262 C42 252 46 230 44 196;M-44 196 C-46 230 -42 252 -28 262 C-20 270 -8 274 0 274 C8 274 20 270 28 262 C42 252 46 230 44 196;M-42 196 C-40 222 -34 242 -22 256 C-14 264 -6 268 0 268 C6 268 14 264 22 256 C34 242 40 222 42 196;M-42 196 C-40 222 -34 242 -22 256 C-14 264 -6 268 0 268 C6 268 14 264 22 256 C34 242 40 222 42 196;M-44 196 C-46 230 -42 252 -28 262 C-20 270 -8 274 0 274 C8 274 20 270 28 262 C42 252 46 230 44 196"/>
+    </path>
+    <line class="fs-scan" x1="-54" x2="54" y1="120" y2="120" stroke-width="1.6"/>
+    <g class="lift" stroke-width="2.4"><path d="M-52 262V240M-52 240l-6 8M-52 240l6 8"/></g>
+    <g class="lift" style="animation-delay:-.8s" stroke-width="2.4"><path d="M52 262V240M52 240l-6 8M52 240l6 8"/></g>
+    <g fill="#fff" stroke-width="2.2"><circle class="pulse" cx="-34" cy="228" r="4.5"/><circle class="pulse" style="animation-delay:.5s" cx="34" cy="228" r="4.5"/><circle class="pulse" style="animation-delay:1s" cx="0" cy="270" r="4.5"/></g>
+  </g>
+</svg>
+<div class="ba-tag" aria-hidden="true" style="left:52px;top:96px"><span class="b">Before</span><span class="a">After</span></div>
+
+
+</div></div><span class="badge">Facial Surgery Cover</span></div></section>
 <section class="tr info-right" id="rhino"><div class="art reveal left"><div class="hs"><div class="hs-in">
 <svg class="abs" style="left:0;top:0;overflow:visible" width="590" height="415" viewBox="0 0 590 415"><defs>
 <linearGradient id="skinG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8b4a4"/><stop offset="1" stop-color="#ef8d83"/></linearGradient>
@@ -264,10 +264,10 @@
 <filter id="shd" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#6d4bb0" flood-opacity=".25"/></filter>
 </defs><defs><linearGradient id="Dc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6defb"/><stop offset="1" stop-color="#f4f0fe"/></linearGradient>
 <linearGradient id="Dl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8c9f7"/><stop offset="1" stop-color="#bda6ef"/></linearGradient></defs>
-<circle cx="310" cy="206" r="196" fill="url(#Dc)"/><circle cx="500" cy="90" r="52" fill="#fff" opacity=".5"/>
-<path d="M0 372C130 356 240 376 340 382C450 390 520 372 590 360V415H0Z" fill="#e0d5f9" opacity=".9"/>
-<g class="leafsw" style="animation-delay:0s;transform-origin:560px 400px"><path transform="translate(560 260) rotate(12 0 140)" d="M0 140C-56 84.0 -22.400000000000002 14.0 0 0C22.400000000000002 14.0 56 84.0 0 140Z" fill="url(#Dl)"/><path transform="translate(560 260) rotate(12 0 140)" d="M0 140V6" stroke="#fff" stroke-opacity=".55" stroke-width="2"/></g><g class="leafsw" style="animation-delay:-1s;transform-origin:526px 406px"><path transform="translate(526 306) rotate(-8 0 100)" d="M0 100C-40 60.0 -16.0 10.0 0 0C16.0 10.0 40 60.0 0 100Z" fill="url(#Dl)"/><path transform="translate(526 306) rotate(-8 0 100)" d="M0 100V6" stroke="#fff" stroke-opacity=".55" stroke-width="2"/></g><g class="leafsw" style="animation-delay:-0.6s;transform-origin:18px 422px"><path transform="translate(18 322) rotate(-10 0 100)" d="M0 100C-48 60.0 -19.200000000000003 10.0 0 0C19.200000000000003 10.0 48 60.0 0 100Z" fill="url(#Dl)"/><path transform="translate(18 322) rotate(-10 0 100)" d="M0 100V6" stroke="#fff" stroke-opacity=".55" stroke-width="2"/></g>
-<path class="spark" style="animation-delay:0s" transform="translate(330 26) scale(1.2)" d="M0 -9L2.6 -2.6L9 0L2.6 2.6L0 9L-2.6 2.6L-9 0L-2.6 -2.6Z" fill="#fff" stroke="#c4b0f0" stroke-width=".8"/><path class="spark" style="animation-delay:1s" transform="translate(560 180) scale(0.9)" d="M0 -9L2.6 -2.6L9 0L2.6 2.6L0 9L-2.6 2.6L-9 0L-2.6 -2.6Z" fill="#fff" stroke="#c4b0f0" stroke-width=".8"/><path class="spark" style="animation-delay:2s" transform="translate(24 250) scale(0.8)" d="M0 -9L2.6 -2.6L9 0L2.6 2.6L0 9L-2.6 2.6L-9 0L-2.6 -2.6Z" fill="#fff" stroke="#c4b0f0" stroke-width=".8"/><g transform="translate(20 44)" filter="url(#shd)"><rect width="300" height="312" rx="26" fill="#fff"/>
+
+<rect x="0" y="372" width="590" height="43" fill="#d4d4d4"/>
+
+<g transform="translate(20 44)" filter="url(#shd)"><rect width="300" height="312" rx="26" fill="#fff"/>
 <g stroke="#eee8fb" stroke-width="1.4"><path d="M30 20V292M60 20V292M90 20V292M120 20V292M150 20V292M180 20V292M210 20V292M240 20V292M270 20V292M16 50H284M16 80H284M16 110H284M16 140H284M16 170H284M16 200H284M16 230H284M16 260H284"/></g>
 <path d="M150 60L150 72C150 100 152 118 156 128C162 142 184 158 202 178C212 190 214 200 204 204C214 206 218 212 210 218C206 222 198 222 192 220C200 228 206 232 210 238C214 246 208 256 198 258C180 262 164 262 150 270C104 244 88 204 86 160C82 100 106 60 150 60Z" fill="url(#skinG)" opacity=".92"/>
 <path d="M204 204C214 206 218 212 210 218C206 222 198 222 192 220C200 228 206 232 210 238C214 246 208 256 198 258C180 262 164 262 150 270" fill="none" stroke="#1d2a4a" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -278,16 +278,16 @@
 <path class="arc" d="M180 204A26 26 0 0 0 166 180" fill="none" stroke="#e8737f" stroke-width="3.4" stroke-linecap="round"/>
 <g class="calip"><path d="M262 120H276V220H262" fill="none" stroke="#6d28d9" stroke-width="3" stroke-linecap="round"/><circle cx="262" cy="120" r="5" fill="#fff" stroke="#6d28d9" stroke-width="2.6"/><circle cx="262" cy="220" r="5" fill="#fff" stroke="#6d28d9" stroke-width="2.6"/></g>
 <circle class="pulse" cx="204" cy="204" r="5.5" fill="#fff" stroke="#e8737f" stroke-width="2.4"/><circle class="pulse" style="animation-delay:.7s" cx="156" cy="128" r="5.5" fill="#fff" stroke="#e8737f" stroke-width="2.4"/>
-<text x="20" y="304" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#6d28d9" letter-spacing=".08em">PROFILE ANALYSIS</text></g>
+<text x="20" y="304" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#6d28d9" letter-spacing=".08em">COVERED ASSESSMENT</text></g>
 <path d="M316 150C350 150 360 190 392 190" stroke="#6d28d9" stroke-width="2" stroke-dasharray="4 5" fill="none" class="mesh"/></svg>
 <div class="abs wm " style="left:396px;top:92px;width:172px;height:340px;transform-origin:0 0;transform:scale(0.8)"><span class="abs" style="left:-30px;top:0;width:252px;height:340px" data-niva-character="skin"></span><svg class="abs" style="left:0;top:0;overflow:visible" width="172" height="340"><g class="pulse" style="transform-origin:62px 152px"><circle cx="96" cy="222" r="7" fill="#fff" stroke="#e8737f" stroke-width="2.6"/></g></svg>
-</div><img class="abs grpL" src="assets/p_personL.png" style="left:330px;top:260px;width:80px;height:auto;transform-origin:40px 150px;transform:scaleX(-1)" alt=""><div class="chip" style="left:332px;top:18px;width:186px;animation-delay:0s"><span class="dot"></span><div><b>Nasal angle</b><span>106° · harmonious</span></div></div><div class="chip" style="left:396px;top:338px;width:186px;animation-delay:-1.5s"><svg width="34" height="34" viewBox="0 0 34 34"><circle cx="17" cy="17" r="13" fill="none" stroke="#ece5fb" stroke-width="5"/><circle class="ringp" cx="17" cy="17" r="13" fill="none" stroke="#6d28d9" stroke-width="5" stroke-linecap="round" pathLength="100" transform="rotate(-90 17 17)"/></svg><div><b>Bridge profile</b><span>Smoothing · live</span></div></div></div></div><span class="badge">Rhinoplasty</span></div><article class="info reveal right">
-  <span class="eyebrow"><b>04</b> NASAL SURGERY</span>
+</div></div></div><span class="badge">Rhinoplasty Cover</span></div><article class="info reveal right">
+  <span class="eyebrow"><b>04</b> RHINOPLASTY COVER</span>
   <h3>Rhinoplasty</h3>
-  <p class="lead">Refines the shape, size and proportion of the nose, and corrects breathing problems such as a deviated septum when medically necessary.</p>
-  <div class="stats"><div><small>Duration</small><strong>1.5–3 hrs</strong></div><div><small>Recovery</small><strong>1–2 weeks</strong></div><div><small>Final shape</small><strong>≈ 12 months</strong></div></div>
-  <h4>What's involved</h4>
-  <ol class="steps"><li><span>1</span>Nasal analysis & imaging</li><li><span>2</span>Digital outcome preview</li><li><span>3</span>Surgery under anesthesia</li><li><span>4</span>Splint removal & check-ups</li></ol>
+  <p class="lead">NIVA covers rhinoplasty where it is medically necessary, such as correcting breathing problems, and reimburses the approved share of the cost once your claim is approved.</p>
+  <div class="stats"><div><small>Reimbursement</small><strong>65%</strong></div><div><small>Annual limit</small><strong>$7,500</strong></div><div><small>Claim decision</small><strong>~7 days</strong></div></div>
+  <h4>How a claim works</h4>
+  <ol class="steps"><li><span>1</span>Check your eligibility</li><li><span>2</span>Get pre-authorisation</li><li><span>3</span>Treat with your chosen provider</li><li><span>4</span>Submit your claim &amp; get reimbursed</li></ol>
   <div class="policy"><div class="ph"><svg width="22" height="24" viewBox="0 0 24 26" fill="none" stroke="#6d28d9" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2 4 5v7c0 5 3.4 8 8 10 4.6-2 8-5 8-10V5z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><strong>Your policy coverage</strong></div>
    <dl><div><dt>Coverage</dt><dd>65% up to $7,500</dd></div><div><dt>Waiting period</dt><dd>12 months</dd></div><div><dt>Pre-authorization</dt><dd>Required</dd></div><div><dt>Co-pay</dt><dd>20% (0% if medically necessary)</dd></div></dl>
    <p class="excl"><b>Not covered:</b> Revision surgery within 12 months unless medically required.</p>
@@ -297,12 +297,12 @@
 </main>
 
   <footer class="on-dark bg-black text-white">
-    <div class="mx-auto max-w-[1500px] px-5 sm:px-8 xl:px-0 pt-[64px] pb-[56px]">
+    <div class="mx-auto max-w-[1500px] px-5 sm:px-8 min-[1560px]:px-0 pt-[64px] pb-[56px]">
       <div class="grid gap-12 lg:grid-cols-[432px_1fr]">
 
         <!-- brand + quick links -->
         <div class="lg:border-r lg:border-[#444] lg:pr-8">
-          <a href="index.html" aria-label="NIVA home" class="inline-block font-sans font-bold text-[30px] tracking-[.5em] leading-none">NIVA</a>
+          <a href="../home/index.html" aria-label="NIVA home" class="inline-block font-sans font-bold text-[30px] tracking-[.5em] leading-none">NIVA</a>
           <p class="mt-[50px] text-[20px] text-[#bdbdbd]">Quick links</p>
           <ul class="mt-6 space-y-[18px]">
             <li><a class="footer-link" href="#">File a Claim</a></li>
@@ -318,8 +318,8 @@
             <div>
               <h3 class="text-[22px] font-bold uppercase tracking-[.02em]">Individuals &amp; Patients</h3>
               <ul class="mt-9 space-y-[18px]">
-                <li><a class="footer-link" href="#">Login</a></li>
-                <li><a class="footer-link" href="#">Claims</a></li>
+                <li><a class="footer-link" href="../login/index.html">Login</a></li>
+                <li><a class="footer-link" href="../claims/index.html">Claims</a></li>
                 <li><a class="footer-link" href="#">Coverage</a></li>
                 <li><a class="footer-link" href="#">Find a Provider</a></li>
               </ul>
@@ -382,8 +382,7 @@
       <p class="mt-[38px] text-[16px]">© 2026 NIVA</p>
     </div>
   </footer>
-
-<script src="js/characters.js"></script>
-<script src="script.js"></script>
+  <script src="characters.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

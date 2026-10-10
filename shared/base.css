@@ -27,11 +27,7 @@ body { font-family: 'Lato', system-ui, sans-serif; color: #000; background: #fff
 a:focus-visible, button:focus-visible { outline: 2px solid #6d28d9; outline-offset: 3px; }
 .on-dark a:focus-visible, .on-dark button:focus-visible { outline-color: #fff; }
 
-/* Hero overlay for headline legibility */
-.hero-overlay { background: linear-gradient(90deg, rgba(0,0,0,.28) 0%, rgba(0,0,0,.08) 60%, rgba(0,0,0,0) 100%); }
 
-/* Why NIVA: stat divider */
-.stat { border-bottom: 1px solid #cfcfcf; padding-bottom: 26px; }
 
 /* Outline buttons */
 .btn-outline { display: inline-flex; align-items: center; justify-content: center; min-height: 80px; padding: 0 48px; border: 1px solid #000; background: #fff; font-weight: 700; font-size: 20px; transition: background-color .25s, color .25s; }

@@ -1,0 +1,20 @@
+/* Insured people — cards (uses shared/policy-shell.css) */
+.person { padding: 32px 36px; background: #fff; border: 1px solid #e4e4e7; border-bottom: 2px solid #6d28d9; }
+.person-top { display: flex; align-items: center; gap: 20px; }
+.person-av { display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: #f0eafc; color: #6d28d9; border: 1px solid #6d28d9; font-family: 'Newsreader', Georgia, serif; font-size: 28px; flex: none; }
+.person h3 { font-family: 'Newsreader', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 1.1; }
+.person-sub { display: block; margin-top: 6px; font-size: 13px; font-weight: 700; letter-spacing: .1em; color: #555; }
+.person-rm { margin-left: auto; }
+.person-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px 32px; margin-top: 28px; padding-top: 24px; border-top: 1px solid #e4e4e7; }
+.person-grid dt { font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #555; }
+.person-grid dd { margin-top: 6px; font-size: 18px; font-weight: 700; word-break: break-word; }
+.person-form { max-width: none; margin-top: 28px; padding: 28px 32px; background: #fff; border: 1px solid #e4e4e7; }
+.person-form .pol-fields { grid-template-columns: 1fr; }
+@media (min-width: 720px) { .person-form .pol-fields { grid-template-columns: 1fr 1fr 1fr; } }
+@media (max-width: 760px) { .person-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .person-grid { grid-template-columns: 1fr; } .person, .person-form { padding: 22px 18px; } }
+.auth-input { display: block; width: 100%; min-height: 60px; padding: 0 18px; border: 1px solid #000; background: #fff; font: inherit; font-size: 17px; border-radius: 0; }
+.auth-input:focus { outline: 2px solid #6d28d9; outline-offset: 2px; }
+.auth-label { display: block; margin-bottom: 10px; font-weight: 700; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; }
+.auth-msg { margin-bottom: 20px; font-size: 15px; color: #b42318; }
+.person-form .pol-btn { margin-top: 28px; }

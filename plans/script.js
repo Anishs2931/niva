@@ -5,7 +5,7 @@ function fit(){
   const root=document.documentElement.style;
   if(innerWidth<=1100){
     stage.style.transform='';page.style.height='';
-    root.setProperty('--ms',Math.min(1,(innerWidth-32)/960));
+    root.setProperty('--ms',Math.min(1,(innerWidth-32)/1200));
     return;
   }
   const hh=document.querySelector('header').offsetHeight;

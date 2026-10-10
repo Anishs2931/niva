@@ -1,0 +1,23 @@
+/* Claim details */
+.qc-tag { padding: 4px 12px; border: 1px solid #bdbdc6; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #444; }
+.qc-tag.cl-approved { border-color: #6d28d9; color: #6d28d9; }
+.qc-tag.cl-rejected { border-color: #b42318; color: #b42318; }
+.cd-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; margin-top: 28px; }
+.cd-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; margin-top: 32px; align-items: start; }
+@media (min-width: 1024px) { .cd-layout { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 32px; } }
+.cd-main, .cd-side { display: grid; gap: 24px; }
+.cd-card { padding: 32px 36px; background: #fff; border: 1px solid #e4e4e7; border-bottom: 2px solid #6d28d9; }
+.cd-h { margin-bottom: 24px; font-family: 'Newsreader', Georgia, serif; font-size: 28px; font-weight: 400; letter-spacing: -.01em; }
+.cd-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 32px; }
+.cd-stack { display: grid; gap: 22px; }
+.cd-grid dt, .cd-stack dt { font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #555; }
+.cd-grid dd, .cd-stack dd { margin-top: 6px; font-size: 18px; font-weight: 700; word-break: break-word; }
+.cd-money { color: #6d28d9; }
+.cd-docs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.cd-doc { padding: 22px 24px; border: 1px solid #e4e4e7; background: #fafafb; }
+.cd-doc-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.cd-doc b { font-size: 18px; }
+.cd-chip { flex: none; padding: 3px 8px; border: 1px solid #6d28d9; color: #6d28d9; font-size: 11px; font-weight: 700; letter-spacing: .06em; }
+.cd-doc p { margin-top: 12px; font-size: 16px; color: #333; word-break: break-word; }
+.cd-doc small { display: block; margin-top: 14px; font-size: 14px; color: #666; }
+@media (max-width: 760px) { .cd-docs, .cd-grid { grid-template-columns: 1fr; } .cd-card { padding: 24px 20px; } }

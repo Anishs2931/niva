@@ -1,0 +1,24 @@
+/* Get a quote — application form */
+.auth-input { display: block; width: 100%; min-height: 64px; padding: 0 20px; border: 1px solid #000; background: #fff; font: inherit; font-size: 18px; border-radius: 0; }
+.auth-input:focus { outline: 2px solid #6d28d9; outline-offset: 2px; }
+.auth-label { display: block; margin-bottom: 10px; font-weight: 700; font-size: 15px; letter-spacing: .06em; text-transform: uppercase; }
+.auth-btn { display: block; width: 100%; height: 72px; margin-top: 28px; border: 1px solid #000; background: #000; color: #fff; font-weight: 700; font-size: 20px; cursor: pointer; transition: background-color .25s, color .25s; }
+.auth-btn:hover { background: #fff; color: #000; }
+.auth-msg { margin-top: 20px; font-size: 15px; color: #b42318; }
+.auth-link { font-weight: 700; border-bottom: 2px solid #6d28d9; }
+.gq-plan { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; }
+.gq-plan-prem { text-align: right; display: grid; gap: 6px; }
+.gq-plan-prem b { font-size: clamp(36px, 3.4vw, 52px); font-weight: 400; line-height: 1; }
+.gq-block { margin-top: 56px; }
+.gq-h { margin: 8px 0 22px; font-family: 'Newsreader', Georgia, serif; font-size: 30px; font-weight: 400; letter-spacing: -.015em; }
+.gq-text { padding: 16px 20px; resize: vertical; }
+.gq-file { padding: 18px 20px; min-height: 0; }
+.gq-req { color: #b42318; }
+.gq-addon { display: flex; gap: 18px; align-items: flex-start; padding: 24px 28px; background: #fff; border: 1px solid #e4e4e7; border-bottom: 2px solid #6d28d9; cursor: pointer; }
+.gq-addon input { width: 22px; height: 22px; margin-top: 3px; accent-color: #6d28d9; flex: none; }
+.gq-addon b { display: block; font-size: 19px; }
+.gq-addon em { display: block; margin-top: 4px; font-style: normal; font-size: 17px; color: #333; }
+.gq-addon i { display: block; margin-top: 10px; font-style: normal; font-weight: 700; font-size: 17px; }
+.gq-final { margin-top: 56px; padding: 32px 36px; background: #fff; border: 1px solid #e4e4e7; border-bottom: 2px solid #6d28d9; }
+.gq-final b { display: block; margin-top: 10px; font-size: clamp(40px, 4vw, 64px); font-weight: 400; line-height: 1; }
+.pol-note { margin-top: 16px; font-size: 16px; }

@@ -1,0 +1,7 @@
+/* Policies */
+.policy-card { padding: 40px 40px 44px; height: 100%; display: flex; flex-direction: column; }
+.policy-card > p { margin-top: auto; padding-top: 28px; }
+.policy-premium { display: flex; align-items: baseline; justify-content: space-between; margin-top: 30px; padding-top: 18px; border-top: 1px solid #cfcfcf; }
+.policy-help { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px; padding: 56px 60px; background: #fff; border: 1px solid #e4e4e7; border-bottom: 2px solid #6d28d9; }
+@media (max-width: 640px) { .policy-card { padding: 28px 24px 32px; } .policy-help { padding: 32px 24px; } }
+@media (min-width: 640px) { .policy-card h2 { min-height: 2.3em; } }

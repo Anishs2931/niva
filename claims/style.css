@@ -1,0 +1,13 @@
+/* Claims — cards (stat row, header and list come from shared/policy-shell.css) */
+.qcard { padding: 32px 36px; background: #fff; border: 1px solid #e4e4e7; border-bottom: 2px solid #6d28d9; }
+.qc-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.qc-tag { padding: 4px 12px; border: 1px solid #bdbdc6; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #444; }
+.qc-tag.cl-approved { border-color: #6d28d9; color: #6d28d9; }
+.qc-tag.cl-rejected { border-color: #b42318; color: #b42318; }
+.cl-reason { margin-top: 22px; font-family: 'Newsreader', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 1.2; letter-spacing: -.01em; }
+.qc-row { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 32px; margin-top: 26px; padding-top: 22px; border-top: 1px solid #e4e4e7; }
+.qc-row .pol-meta { margin-top: 0; gap: 8px 56px; }
+.qc-more { margin-top: 22px; padding-top: 20px; border-top: 1px dashed #cfcfd6; }
+.qc-more .pol-meta { margin-top: 0; gap: 8px 56px; }
+@media (max-width: 640px) { .qcard { padding: 24px 20px; } }
+.pol-btn.small { text-decoration: none; }

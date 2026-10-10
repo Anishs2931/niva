@@ -225,6 +225,20 @@
     s += '<path d="M-11 243.800 C-4 250 6 250 12 243.600 C6 245.600 -5 245.600 -11 243.800 Z" fill="#CF817C"/>';
     s += '<path d="M-14 243 C-6 245.500 7 245.500 14.500 243" fill="none" stroke="#9B5058" stroke-width="1.400" stroke-linecap="round"/>';
     s += '<ellipse cx="0.500" cy="257" rx="8" ry="3" fill="' + shade + '" opacity=".28"/>';
+    if (opts.ba) {
+      // BEFORE a facelift / contour procedure: soft jowls, deeper smile lines, under-eye shading (fades out in the loop)
+      var bf = '';
+      bf += '<path d="M-36 230 C-46 246 -41 263 -26 269 C-20 271 -14 269 -9 266 L-23 255 C-30 249 -34 241 -36 230 Z" fill="' + skin + '"/>';
+      bf += '<path d="M36 230 C46 246 41 263 26 269 C20 271 14 269 9 266 L23 255 C30 249 34 241 36 230 Z" fill="' + skin + '"/>';
+      bf += '<path d="M-29 236 C-33 248 -28 259 -19 265 M29 236 C33 248 28 259 19 265" fill="none" stroke="' + shade + '" stroke-width="1.700" stroke-linecap="round" opacity=".65"/>';
+      bf += '<path d="M-15 271 C-6 281 6 281 15 271 C6 277 -6 277 -15 271 Z" fill="' + shade + '" opacity=".55"/>';
+      bf += '<path d="M-24 213 C-28 226 -25 237 -17 243 M24 213 C28 226 25 237 17 243" fill="none" stroke="' + deep + '" stroke-width="2.600" stroke-linecap="round" opacity=".85"/>';
+      bf += '<path d="M-30 193 C-24 201 -14 201 -9 193 M9 193 C14 201 24 201 30 193" fill="none" stroke="' + deep + '" stroke-width="2.400" stroke-linecap="round" opacity=".6"/>';
+      bf += '<path d="M-32 232 C-30 246 -22 258 -10 264 L-12 250 C-20 246 -26 240 -32 232 Z M32 232 C30 246 22 258 10 264 L12 250 C20 246 26 240 32 232 Z" fill="' + shade + '" opacity=".4"/>';
+      bf += '<path d="M-6 150 C6 147 20 148 30 152 M-4 160 C8 157 20 158 28 161" fill="none" stroke="' + deep + '" stroke-width="1.600" stroke-linecap="round" opacity=".5"/>';
+      bf += '<path d="M-14 244 C-16 248 -17 250 -19 252 M15 244 C17 248 18 250 20 252" fill="none" stroke="' + deep + '" stroke-width="1.800" stroke-linecap="round" opacity=".7"/>';
+      s += '<g class="niva-ba-before">' + bf + '</g>';
+    }
     // hair — side-parted bob swept across the forehead, ends turning in at the jaw
     s += '<path d="M-52 236 C-60 212 -58 172 -52 146 C-46 118 -26 100 -4 98 C22 96 46 112 52 142 C57 170 57 212 53 236 C50 246 42 248 36 244 C33 241 34 238 35 234 C38 216 42 196 44 178 C42 166 38 158 28 148 C14 134 -2 126 -18 123 C-28 128 -37 140 -41 158 C-43 168 -43 176 -43 184 C-41 204 -38 222 -34 236 C-36 244 -42 249 -48 247 C-51 244 -52 240 -52 236 Z" fill="' + hair + '"/>';
     s += '<path d="M-18 123 C-24 112 -20 103 -8 99" fill="none" stroke="' + hairHi + '" stroke-width="1.800" stroke-linecap="round" opacity=".85"/>';

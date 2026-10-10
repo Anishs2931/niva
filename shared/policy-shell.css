@@ -1,0 +1,66 @@
+/* Shared by the policy pages: vertical tab bar, layout, lists, forms, buttons */
+.policy-label { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #555; }
+/* Policies — vertical tab bar + panels */
+.pol-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; }
+@media (min-width: 1024px) { .pol-layout { grid-template-columns: minmax(0, 1fr) 72px; gap: 40px; } }
+.pol-side { position: relative; }
+.pol-tabs { display: flex; overflow-x: auto; border-bottom: 1px solid #e4e4e7; }
+.pol-tab { position: relative; flex: none; background: none; border: 0; padding: 0; cursor: pointer; font: inherit; border-bottom: 3px solid transparent; margin-bottom: -1px; }
+.pol-tab span { display: block; padding: 14px 20px; font-weight: 700; font-size: 16px; color: #000; white-space: nowrap; }
+.pol-tab[aria-current="page"] { border-bottom-color: #6d28d9; }
+.pol-tab[aria-current="page"] span { color: #6d28d9; }
+.pol-shape { display: none; }
+@media (min-width: 1024px) {
+  .pol-side { position: sticky; top: 124px; align-self: start; padding: 64px 0; }
+  .pol-side::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: #cfcfcf; }
+  .pol-tabs { display: block; overflow: visible; border: 0; }
+  .pol-tab { display: block; width: 64px; height: 88px; margin: 0 0 8px; border: 0; }
+  .pol-tab[aria-current="page"] { border: 0; z-index: 2; }
+  .pol-shape { display: block; position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .pol-shape path { fill: #ececef; transition: fill .2s; }
+  .pol-tab:hover .pol-shape path { fill: #e0e0e6; }
+  .pol-tab[aria-current="page"] .pol-shape path { fill: #fff; stroke: #6d28d9; stroke-width: 2; vector-effect: non-scaling-stroke; }
+  .pol-tab span { position: relative; display: flex; align-items: center; justify-content: center; height: 100%; padding: 0 8px 0 4px; text-align: center; font-size: 13px; line-height: 1.2; white-space: normal; }
+}
+.pol-form { margin-top: 48px; max-width: 900px; }
+.pol-fields { display: grid; gap: 24px; grid-template-columns: 1fr; }
+@media (min-width: 720px) { .pol-fields { grid-template-columns: 1fr 1fr; } }
+.pol-btn { display: inline-flex; align-items: center; justify-content: center; height: 60px; margin-top: 28px; padding: 0 40px; border: 1px solid #000; background: #000; color: #fff; font-weight: 700; font-size: 18px; cursor: pointer; transition: background-color .25s, color .25s; }
+.pol-btn:hover { background: #fff; color: #000; }
+.pol-btn.small { height: 44px; margin: 0; padding: 0 22px; font-size: 16px; }
+.pol-link { font-weight: 700; font-size: 16px; border-bottom: 2px solid #6d28d9; background: none; cursor: pointer; padding: 0 0 1px; }
+.pol-link:hover { color: #6d28d9; }
+.pol-sub { margin-top: 64px; font-family: 'Newsreader', Georgia, serif; font-size: 32px; letter-spacing: -.015em; }
+.pol-list { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 20px; }
+.pol-item { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px; padding: 28px 32px; background: #fff; border: 1px solid #e4e4e7; border-bottom: 2px solid #6d28d9; }
+.pol-item h3 { font-family: 'Newsreader', Georgia, serif; font-size: 28px; line-height: 1.15; letter-spacing: -.01em; }
+.pol-meta { display: flex; flex-wrap: wrap; gap: 8px 36px; margin-top: 14px; }
+.pol-meta div span { display: block; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #555; }
+.pol-meta div b { display: block; margin-top: 3px; font-size: 18px; }
+.pol-actions { display: flex; align-items: center; gap: 24px; }
+.pol-tag { display: inline-block; margin-left: 12px; padding: 3px 10px; border: 1px solid #6d28d9; color: #6d28d9; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; vertical-align: middle; }
+.pol-empty { margin-top: 24px; padding: 32px; border: 1px dashed #bdbdc6; color: #333; font-size: 18px; }
+@media (max-width: 1023px) { .pol-side { order: -1; } }
+
+/* Stat row + page header (quotes, policy detail) */
+.pol-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
+.pol-active { min-width: 112px; padding: 14px 22px; text-align: center; background: #fff; border: 1px solid #e4e4e7; border-bottom: 2px solid #6d28d9; }
+.pol-active b { display: block; font-family: 'Newsreader', Georgia, serif; font-size: 40px; line-height: 1; font-weight: 400; }
+.pol-active span { display: block; margin-top: 6px; font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #555; }
+.pol-stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 24px; border: 1px solid #e4e4e7; background: #fff; }
+.pol-stats div { padding: 22px 26px; }
+.pol-stats div + div { border-left: 1px solid #e4e4e7; }
+.pol-stats span { display: block; font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #555; }
+.pol-stats b { display: block; margin-top: 8px; font-family: 'Newsreader', Georgia, serif; font-size: 32px; font-weight: 400; }
+@media (max-width: 640px) { .pol-stats { grid-template-columns: 1fr; } .pol-stats div + div { border-left: 0; border-top: 1px solid #e4e4e7; } }
+
+/* Detail rows (policy + quote details) */
+.pol-stats4 { grid-template-columns: repeat(4, 1fr); margin-top: 24px; }
+.pol-stats4 em { display: block; margin-top: 6px; font-style: normal; font-size: 15px; color: #444; }
+@media (max-width: 900px) { .pol-stats4 { grid-template-columns: 1fr 1fr; } .pol-stats4 div:nth-child(3) { border-left: 0; } .pol-stats4 div:nth-child(n+3) { border-top: 1px solid #e4e4e7; } }
+.pol-checks { list-style: none; margin: 24px 0 0; padding: 0; }
+.pol-checks li { position: relative; padding: 22px 0 22px 44px; border-bottom: 1px solid #e4e4e7; }
+.pol-checks li::before { content: ''; position: absolute; left: 6px; top: 28px; width: 14px; height: 8px; border-left: 2.5px solid #6d28d9; border-bottom: 2.5px solid #6d28d9; transform: rotate(-45deg); }
+.pol-checks.no li::before { width: 18px; height: 18px; border: 0; top: 24px; left: 4px; background: linear-gradient(45deg, transparent 45%, #b42318 45% 55%, transparent 55%), linear-gradient(-45deg, transparent 45%, #b42318 45% 55%, transparent 55%); transform: none; }
+.pol-checks b { display: block; font-size: 19px; }
+.pol-checks span { display: block; margin-top: 6px; font-size: 17px; color: #333; }
