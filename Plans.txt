@@ -1,0 +1,136 @@
+
+Product 1: The Hair Restoration Protection Plan (Hair Transplant)
+
+
+1. Core Coverage Description
+
+The Hair Restoration Protection Plan is a customer-facing surgical warranty engineered to protect patients from both immediate health crises and long-term biological failure. This product provides a dedicated financial safety net for patients undergoing Follicular Unit Extraction (FUE) or Follicular Unit Transplantation (FUT). It eliminates the out-of-pocket financial exposure tied to emergency hospital treatments and the steep costs of secondary corrective hair procedures.
+
+2. Short-Window Complications (Days 1 to 45)
+
+This window covers acute, unexpected post-operative medical crises that require emergency medical intervention or hospitalization:
+• Donor or Recipient Area Necrosis: Microvascular tissue death across the scalp caused by aggressive graft packing, compromised vascularity, or improper harvesting techniques.
+• Acute Scalp Cellulitis / Systemic Infection: Deep-tissue bacterial infection of the scalp tracking into the subcutaneous layers, requiring emergency physician evaluation, surgical debridement, or systemic intravenous (IV) antibiotics.
+• Post-Operative Hemorrhage: Uncontrollable, acute bleeding from the donor or recipient sites within the immediate days following surgery that cannot be managed with standard pressure dressings.
+
+3. Long-Window Side Effects & Complications (Days 46 to 180+)
+
+This extended window addresses sub-acute medical developments that emerge during the prolonged tissue-healing phase:
+• Delayed Pyogenic Granuloma: Benign, highly vascular lesions that erupt at the graft insertion sites, causing persistent bleeding, crusting, and localized tissue destruction.
+• Severe Subcutaneous Inclusion Cysts: Widespread, deep-seated epidermal cyst sheets forming beneath the scalp surface due to improperly buried grafts, creating chronic inflammatory foreign-body reactions.
+• Chronic Neuropathic Scalp Pain: Persistent, severe neuralgia or burning pain lasting past 6 months, caused by transection or entrapment of the occipital nerves during donor harvesting.
+
+4. Exact Cases of Surgical Failure & Objective Measurement
+
+Claims for surgical failure are locked out for the first 12 months to allow the biological growth cycle to complete. Failure is defined by two strict parameters:
+• Graft Survival Deficit: The total emergent follicular unit density drops below 70% of the documented volume implanted during the primary procedure.
+	• Objective Measurement: The patient must submit a digital trichoscopy report from an independent dermatologist. The specialist utilizes a computerized magnifying camera to calculate active follicular units per square centimetre (FU/cm²) across three distinct 1 cm² grids in the recipient area. The app's ledger cross-references this against the original surgical log.
+• Pathological Donor Area Depletion (Over-Harvesting): The donor zone is over-extracted, leaving patchy, thin, permanent bald scarring.
+	• Objective Measurement: Evaluated via automated pixel-ratio image matching. High-resolution trichoscopic images of the donor area must confirm that post-extraction density has fallen below 30 FUs/cm², breaking natural cosmetic coverage patterns.
+
+5. Cash Indemnification & Milestone Release Model
+
+• Maximum Fixed Indemnity Cap: ₹2,50,000 / $3,500
+• Milestone 1 (Approval Payout - 30% of Cap): ₹75,000 / $900 transferred directly to the user's account upon automated approval of the independent trichoscopy report and photo baseline, allowing them to secure a corrective procedure.
+• Milestone 2 (Proof-of-Correction Payout - 70% of Cap): ₹1,75,000 / $2,100 unlocked only after the user uploads an official operative log and clinic invoice proving they underwent a secondary dense-packing or scar-revision procedure.
+
+Product 2: The Structural Rhinoplasty Protection Plan (Rhinoplasty)
+
+
+1. Core Coverage Description
+
+The Structural Rhinoplasty Protection Plan delivers comprehensive financial security for patients undergoing cosmetic or functional nasal reshaping. Because the nose relies on delicate cartilaginous frameworks, failures are costly and technically demanding to fix. This product covers both immediate post-op surgical risks and long-term structural collapses, providing a fixed cash indemnity to handle emergency room visits and secondary structural reconstructions.
+
+2. Short-Window Complications (Days 1 to 45)
+
+This window covers emergency medical crises that threaten the patient's airway or immediate nasal tissue survival:
+• Septal Hematoma or Septal Abscess: Rapid accumulation of blood or purulent fluid between the nasal cartilage and the mucoperichondrium. This requires immediate emergency draining to prevent complete ischemic necrosis (melting) of the nasal cartilage.
+• Severe Posterior Epistaxis: Acute, uncontrollable arterial bleeding originating from the posterior nasal cavity, requiring emergency hospital admission, specialized packing, or surgical cauterization.
+
+3. Long-Window Side Effects & Complications (Days 46 to 180+)
+
+This window addresses late-stage structural or biological rejections that occur as scar tissue contracts:
+• Septal Perforation: A physical hole developing through the internal nasal septal cartilage, caused by intraoperative mucosal tears or delayed ischemic breakdown, leading to chronic crusting, bleeding, and whistling.
+• Extrusion or Infection of Synthetic Grafts: The biological rejection and outward migration of silicone, Gore-Tex, or medpor implants through the nasal skin or internal mucosal linings.
+
+4. Exact Cases of Surgical Failure & Objective Measurement
+
+Claims for structural or functional failure are locked out for 6 months (180 days) to allow post-operative swelling (edema) to completely resolve. Failure is defined by:
+• Functional Airway Patency Failure: The surgical modifications cause an acquired internal or external nasal valve collapse, obstructing breathing.
+	• Objective Measurement: The patient must submit a post-operative Rhinomanometry or Acoustic Rhinometry report from an independent Ear, Nose, and Throat (ENT) specialist. The test must document a reduction in nasal airflow capacity exceeding 40% compared to standard physiological baselines or the user's documented pre-op baseline.
+• Severe Midline Structural Deviation: The nose heals with a pronounced cosmetic or structural twist away from the facial midline axis.
+	• Objective Measurement: Verified via the app's facial landmark recognition engine. The software maps a vertical vector from the midpoint of the eyes (intercanthal distance) to the center of the philtrum. If the structural nasal bridge or tip deviates from this axis line by greater than 15 degrees, structural failure is approved.
+
+5. Cash Indemnification & Milestone Release Model
+
+• Maximum Fixed Indemnity Cap: ₹5,00,000 / $6,500
+• Milestone 1 (Approval Payout - 30% of Cap): ₹1,50,000 / $1,950 transferred to the user upon verification of the ENT specialist's report or AI facial metrics.
+• Milestone 2 (Proof-of-Correction Payout - 70% of Cap): ₹3,50,000 / $4,550 unlocked upon the upload of a certified surgical facility bill proving the execution of a secondary revision rhinoplasty involving ear, rib, or septal cartilage grafting.
+
+Product 3: The Advanced Abdominoplasty Warranty (Tummy Tuck)
+
+
+1. Core Coverage Description
+
+The Advanced Abdominoplasty Warranty is designed to offset the high-risk financial exposures associated with major core-contouring surgeries. Tummy tucks involve extensive tissue undermining and deep muscle wall tightening, yielding the highest statistical rates of major complications in cosmetic surgery. This product provides a heavy financial safety net, covering acute systemic issues and long-term failures of the internal muscle repair.
+
+2. Short-Window Complications (Days 1 to 45)
+
+This window covers life-threatening systemic conditions and major tissue failures caused by the extensive nature of the surgery:
+• Major Abdominal Flap Necrosis: Wide-scale tissue death along the low abdominal incision line caused by poor microvascular perfusion, requiring emergency hospital admission and surgical debridement.
+• Deep Vein Thrombosis (DVT) / Pulmonary Embolism (PE): Blood clots forming in the lower extremities or traveling to the lungs, triggered by high intra-abdominal pressure from muscle plication and long operating times.
+• Incision Dehiscence with Fascial Exposure: Complete separation of the skin incision line that exposes the underlying deep abdominal fascia, requiring emergency wound revision in an operating room.
+
+3. Long-Window Side Effects & Complications (Days 46 to 180+)
+
+This window handles late-stage healing anomalies that present after the initial recovery phase:
+• Chronic Progressive Seroma: Persistent, large pockets of fluid accumulating between the abdominal skin flap and the muscle wall that fail to resolve, requiring repeated ultrasound-guided drainages or surgical pocket capsuliectomy.
+• Umbilical Stenosis or Stricture: Pathological scar contracture that narrows or completely closes the opening of the newly repositioned belly button, requiring surgical umbilicoplasty.
+
+4. Exact Cases of Surgical Failure & Objective Measurement
+
+Claims for mechanical or structural failure are locked out for 6 months (180 days) to allow complete fascial binding. Failure is defined by:
+• Fascial Muscle Plication Failure: The permanent internal heavy sutures used to repair the core wall snap or pull through the tissue, causing the abdominal wall to split open internally and bulge back out.
+	• Objective Measurement: The user must upload a diagnostic Abdominal Ultrasound or CT Scan report from an independent radiologist confirming a recurrent rectus abdominis muscle diastasis (gap) measuring greater than 2.0 cm.
+• Severe Lateral "Dog Ear" Deformity: Excess skin and fat left bunched up at the outer endpoints of the hip incision.
+	• Objective Measurement: Verified via the app’s 3D optical topography photo capture. The bunched tissue flaps must physically extend more than 3.0 cm outward from the natural structural curve of the pelvic hip line.
+
+5. Cash Indemnification & Milestone Release Model
+
+• Maximum Fixed Indemnity Cap: ₹4,50,000 / $5,500
+• Milestone 1 (Approval Payout - 30% of Cap): ₹1,35,000 / $1,650 released upon radiologist scan validation or standardized photo confirmation of severe dog ears.
+• Milestone 2 (Proof-of-Correction Payout - 70% of Cap): ₹3,15,000 / $3,850 unlocked upon upload of the operating log showing an open secondary abdominal wall plication revision or surgical skin excision.
+
+Product 4: The High-Definition Liposuction Warranty (Liposuction)
+
+
+1. Core Coverage Description
+
+The High-Definition Liposuction Warranty protects consumers undergoing targeted fat extraction from severe structural contour irregularities. While liposuction is highly popular, it is heavily prone to uneven extraction and tissue damage. This warranty ensures that if a patient experiences severe physical surface defects or life-threatening internal injuries, they receive direct cash indemnity to fund non-invasive treatments or surgical revision procedures.
+
+2. Short-Window Complications (Days 1 to 45)
+
+This window covers highly acute medical emergencies that require immediate hospital trauma or infectious disease care:
+• Internal Visceral Perforation: Accidental puncture of an internal organ (e.g., bowel, bladder, or liver) by the surgical cannula during fat extraction, requiring emergency exploratory laparotomy.
+• Necrotizing Fasciitis or Cannula Track Infection: Rapidly progressing, flesh-eating soft tissue infections tracking along the paths of fat extraction, requiring emergency open debridement and heavy IV antibiotics.
+
+3. Long-Window Side Effects & Complications (Days 46 to 180+)
+
+This window covers chronic structural side effects that develop as the empty subcutaneous spaces heal and contract:
+• Chronic Regional Lymphedema: Permanent destruction or severe scarring of the regional lymphatic drainage channels by the cannula, leading to chronic fluid retention and swelling in a limb.
+• Severe Subcutaneous Fibrosis: The formation of dense, hard, painful sheets of internal scar tissue under the skin that limits physical mobility or causes chronic pain.
+
+4. Exact Cases of Surgical Failure & Objective Measurement
+
+Claims for contour or volumetric failure are locked out for 6 months (180 days) to allow residual swelling and internal fluid to completely clear. Failure is defined by:
+• Severe Contour Depressions (Craters / Rippling): Extreme surface irregularities caused by aggressive, uneven fat removal directly beneath the skin plane.
+	• Objective Measurement: The patient utilizes the app's 3D Optical Surface Topography tool. Standing in high-contrast lighting, the tool generates a depth map of the target area. The software must calculate a localized shadow/surface depression measuring greater than 1.5 cm in depth variation compared to the surrounding tissue plane.
+• Gross Volumetric Asymmetry: A severe visible volume discrepancy between corresponding bilateral sides of the body.
+	• Objective Measurement: The app's comparative 3D volume mapping algorithm calculates the cubic volume coordinates of the treated sides (e.g., left thigh vs. right thigh). The data must confirm a total volumetric tissue variance exceeding 15% between the two corresponding zones.
+
+5. Cash Indemnification & Milestone Release Model
+
+• Maximum Fixed Indemnity Cap: ₹3,00,000 / $4,000
+• Milestone 1 (Approval Payout - 30% of Cap): ₹90,000 / $1,200 transferred to the user once the app’s 3D scanning engine verifies a contour depth drop >1.5 cm or volume variance >15%.
+• Milestone 2 (Proof-of-Correction Payout - 70% of Cap): ₹2,10,000 / $2,800 unlocked only after the patient uploads a paid invoice showing corrective fat grafting (lipofilling) to smooth the craters, or a targeted secondary liposuction revision to balance out the asymmetrical planes.
+Would you like me to generate the exact website Terms and Conditions text that legally binds customers to these objective measurements, or would you like to design the frontend UI text for the automated claims submission screen?
