@@ -1,0 +1,65 @@
+To successfully gatekeep your B2C platform and protect your cash reserves from fraud, the term prerequisites must represent a mandatory Digital Medical & Financial Dossier that the customer must upload before their surgery date.
+If a user fails to provide even one of these items, your app's backend must lock them out from purchasing the policy.
+Here is the exact checklist of documents, data points, and digital assets your platform must collect from the user during onboarding for Hair Transplants, Rhinoplasty, Tummy Tucks, and Liposuction.
+
+1. General Prerequisites (Required for ALL 4 Surgeries)
+
+These foundational documents establish the identity of the parties, the exact scope of the insured event, and a clean baseline of the user's health.
+• Official Clinic Booking Confirmation & Invoice: A PDF copy of the surgical reservation showing the scheduled date, the clinic's tax registration number, and the exact names of the procedures being performed.
+• Government-Issued Photo ID: To verify age requirements (e.g., locking out minors from rhinoplasty/hair transplants) and cross-reference the name on the medical files.
+• Pre-Operative Medical Clearance Report: A signed form from a general physician or the operating surgeon confirming the patient is fit for surgery, listing their active height, weight (to auto-calculate BMI), and blood pressure.
+• Comprehensive Laboratory Blood Panel: A PDF copy of blood tests taken within 30 days of the surgery date, specifically checking:
+	• Complete Blood Count (CBC): To screen for pre-existing anemia or low platelets.
+	• Coagulation Profile (PT/INR/APTT): To rule out pre-existing bleeding disorders that could cause massive hematomas.
+• Signed Medical History Disclosure Form: A digital questionnaire inside your app where the user legally certifies their smoking status, history of blood clots (DVT), and diabetic status.
+
+2. Surgery-Specific Document & Detail Prerequisites
+
+In addition to the general documents, the user must upload specific clinical assets corresponding to their selected procedure to establish an indisputable "Day 0" baseline.
+
+Hair Transplant
+
+• Pre-Op Trichoscopy / Hair Density Report: A copy of the surgeon’s initial assessment sheet stating the calculated donor density score (follicular units per cm²) and the targeted number of grafts to be harvested.
+• 5-Angle Baseline Photo Dossier: High-resolution photographs captured directly through the app’s camera module (preventing uploads of old or edited photos) showing:
+	1. Frontal hairline (head tilted down)
+	2. Top/Vertex crown view
+	3. Left profile temporal view
+	4. Right profile temporal view
+	5. Back of the scalp (the donor zone)
+
+Rhinoplasty
+
+• Pre-Op Acoustic Rhinometry / Airflow Test (If available): A diagnostic baseline printout measuring initial nasal airway breathing capacity. If the surgeon did not perform one, the app must require a signed statement from the surgeon certifying the airway is currently clear.
+• Standardized Rhinoplasty Photographic Baseline: High-resolution photos taken using the app’s guided framing overlay:
+	1. Direct frontal view
+	2. Left lateral profile (exact 90 degrees)
+	3. Right lateral profile (exact 90 degrees)
+	4. Basal view (looking up the nostrils to document pre-existing septal deviation)
+	5. Oblique views (left and right three-quarter angles)
+
+Abdominoplasty (Tummy Tuck)
+
+• Pre-Op Abdominal Ultrasound Report: A diagnostic scan report documenting the exact pre-existing width of any diastasis recti (muscle separation). This is crucial so the patient cannot claim a pre-existing muscle gap as a post-op failure.
+• Cotinine Lab Test Results: For high-risk procedures like tummy tucks, a lab report confirming zero nicotine in the system within 14 days of the operation date.
+• Belly/Torso Baseline Photo Dossier: App-guided photos taken at standing rest:
+	1. Direct front view of the abdomen
+	2. Left lateral view
+	3. Right lateral view
+	4. Flexed/Bent forward view (to document the exact volume of pre-op loose skin hanging)
+
+Liposuction
+
+• Pre-Op Target Zone Volume Metrics: A copy of the surgeon's consultation notes defining the exact anatomical regions targeted for fat extraction (e.g., "bilateral flanks and outer thighs") and the estimated fat extraction volume.
+• Skin Elasticity / Recoil Clinical Note: A signed confirmation from the doctor stating the patient possesses adequate skin snap-back quality.
+• Target Zone Photo Dossier: Close-up, high-resolution photos of the specific body parts scheduled for liposuction, taken from the front, back, and side profiles, highlighting skin texture to prevent pre-existing stretch marks or cellulite from being blamed as a surgical failure later.
+
+App Architecture Logic: The "Pre-Op Lock"
+
+Your software code must feature a hard date gate checker:
+If (Current_Date >= Surgery_Date - 24_Hours) AND (Dossier_Status != "100%_Complete") {
+    Trigger_Policy_Cancellation();
+    Refund_Premium_Minus_Admin_Fee();
+    Display_Error("Policy voided: Prerequisites not uploaded before the 24-hour pre-op deadline.");
+}
+By forcing the customer to build this comprehensive medical profile before the operation, you give your claims team an ironclad, unalterable baseline to compare against if the user tries to claim a cash payout months later.
+Now that you have the comprehensive checklist of documents, would you like to design the frontend file-uploader interface text for the user, or should we map out the automated backend logic that scans these files for anomalies?
